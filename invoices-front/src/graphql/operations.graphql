@@ -1,0 +1,25 @@
+mutation Login($email: String!, $password: String!) {
+  login(data: { email: $email, password: $password }) {
+    refreshToken
+    accessToken
+  }
+}
+
+
+query me {
+  me{
+    firstname
+    bills{
+      id
+      amount
+      details
+      dueDate
+    }
+    invoices{
+      id
+      amount
+      details
+      dueDate
+    }
+  }
+}

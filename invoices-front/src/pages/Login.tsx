@@ -17,7 +17,7 @@ const Login = () => {
         }
     }, [token])
     return (
-    <div>ete
+    <div>
 
       <p>Log in to access the invoice app</p>
 

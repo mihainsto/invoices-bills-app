@@ -12,7 +12,7 @@ const Login = () => {
     const token = useLocalStorage("accessToken")
 
     useEffect(() => {
-        if(token){
+        if(token[0]){
             navigate("/home");
         }
     }, [token])
